@@ -3,13 +3,14 @@ body{
     background-color: rgba(250, 205, 224, .2);
 }
 
-#header{
+.header{
     background-image: url("../img/pexels-artem-beliaikin-433539.jpg");
     background-position: center;
     background-size: cover;
     opacity: 80%;
-    height: 30%;
     margin:0;
+    
+
     
 }
 
@@ -27,9 +28,9 @@ h1{
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 3rem;
-    text-align: center;
     color:#801d48;
     margin-bottom: 4%;
+    margin-left: 35%;
 }
 
 h3{
@@ -39,12 +40,9 @@ h3{
     color:#801d48;
 }
 
-#Zinzy{
+.header div:first-child{
     padding: 2rem;
-    top: 100px;
-    
-    
-    
+    top: 100px; 
 }
 
 nav  ul{
@@ -77,154 +75,6 @@ a:visited{
     color:#801d48;
 }
 
-.container{
- 
-    height: 35rem;
-    margin-left: 10%;
-}
-
-.hasab{
-    width: 28%;
-    float: left;
-    
-    margin: 1%;
-	
-}
-
-
-
-.kep{
-    width: 100%;
-    border-radius: 50%;
-   
-    box-shadow: 0 6px 100px 0 rgba(0, 0, 0, 0.19);
-}
-
-.container p{
-    color:#801d48;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.kep p{
-    text-align: justify;
-    padding: 5px;
-}
-
-
-#kapcsolat{
-    background-color:   #f7d5e6;
-    padding: 10px;
-}
-
-
-#stripe{
-    background-image: url('../img/pexels-artem-beliaikin-2624853.jpg');
-    height: 300px;
-    background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin: 0px;
-   opacity: 80%;
-   z-index: -1;
-   position: relative;
-}
-
-#idezet p{
-    font-size: 35px;
-   color :#801d48;
-    text-align: center;
-    opacity: 500%;
-    margin:0px;
-    font-family: cursive;
-}
-
-#stripe img{
-width: 30px;
-opacity: 50%;
-
-}
-
-#felso{
-    float:right;
-    clear:left;
-}
-
-#also{
-    float: left;
-}
-
-#idezet{
-    margin: auto;
-    padding-top:100px;
-    width: 75%;
-}
-
-.arlistakep{
-    width: 100%;
-    box-shadow:  0 6px 100px 0 rgba(0, 0, 0, 0.19);
-   
-}
-
-#arlistaContainer{
-	height: 400px;
-}
-
-
-
-#hasab3, #hasab2 p{
-	 text-align:center;
- }
-
-.hirekhasab{
-    display: block;
-    border: 2px solid  #f7d5e6;
-    width: 75%;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px auto;
-    overflow: auto;
-    
-}
-
-
- 
-.hirekhasab img{
-    width:12%;
-    float: right;
-    margin: 3px;
-    padding: 2px;
-    
-}
-
-.hirehasab p{
-    width: 50%;
-    margin: 10px;
-}
-
-.hirekcontainer{
-    margin-bottom: 50px;
-   
-}
-
-.kapcsolathasab{
-    width: 48%;
-    float: left;
-
-}
-
-.kapcsolathasab p{
-    font-size: 20px;
-    text-align: center;
-    
-
-}
-
-.kapcsolathasab img{
-    width: 80%;
-}
-
 button{
     background-color:  #f7d5e6;
     border-radius: 4px;
@@ -232,7 +82,6 @@ button{
     padding: 15px 10px;
     text-align: center;
     text-decoration: none;
-    
     font-size: 16px;
     display: block;
     border: 1px solid #801d48;
@@ -241,13 +90,10 @@ button{
   
 }
 
-
-#gombok{
-  float: left;
-  
-  
-	
+body>div:nth-child(3){
+    float: left;
 }
+
 
 .sticky {
     position: -webkit-sticky;
@@ -262,17 +108,161 @@ div.sticky{
     top: 60px;
   }
 
-#facebook{
+.container{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+.container p{
+    color:#801d48;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container div:last-of-type{
+    clear: right;
+   
+}
+
+.coloumn3part{
+    width: 28%;
+    float: left;
+    margin: 1%;
+}
+
+.img{
+    width: 100%;
+    border-radius: 50%;
+   
+    box-shadow: 0 6px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img p{
+    text-align: justify;
+    padding: 5px;
+}
+
+.stripe{
+    background-image: url('../img/pexels-artem-beliaikin-2624853.jpg');
+    height: 250px;
+    background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top:650px;
+   opacity: 80%;
+   z-index: -1;
+   position: relative;
+}
+
+body div:nth-child(7){
+    margin-top: 450px;
+    
+}
+
+body div:nth-child(9){
+    margin-top: 0px;
+    
+}
+
+.stripe p{
+    font-size: 35px;
+    color :#801d48;
+    text-align: center;
+    opacity: 500%;
+    margin:0px;
+    font-family: cursive;
+}
+
+.stripe img{
+    width: 30px;
+    opacity: 50%;
+}
+
+.stripe img:first-of-type{
+    float:right;
+    clear:left;
+    
+}
+
+.stripe img:last-of-type{
+    float: left;
+}
+
+.stripe div{
+    margin: auto;
+    padding-top:100px;
+    width: 75%;
+}
+
+.priceListImg{
+    width: 100%;
+    box-shadow:  0 6px 100px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
+
+.coloumn3part p{
+	 text-align:center;
+ }
+
+.coloumnMiddle{
+    display: block;
+    border: 2px solid  #f7d5e6;
+    width: 75%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    overflow: auto;
+}
+
+.coloumnMiddle img{
+    width:12%;
+    float: right;
+    margin: 3px;
+    padding: 2px;  
+}
+
+.coloumnMiddle p{
+    width: 50%;
+    margin: 10px;
+}
+
+
+
+.coloumn2part{
+    width: 25%;
+    float: left;
+    margin-left: 0px;
+
+}
+
+.coloumn2part p{
+    font-size: 20px;
+    text-align: center;
+}
+
+iframe{
+    width: 65%;
+    margin-left: 4%;
+}
+
+
+
+div p img{
     
     width: 20px;
 }
 
-#osziszinek{
-  width: 40%;
+.coloumn2part:nth-of-type(2) img{
+   width: 40%;
+}
+
+
+body p{
+    clear: left;
 }
   
-
-
 
 
 

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div id="header">
+    <div class="header">
         <div id="Zinzy">
             <h1>Zinzy</h1>
             <h3>Szépségszalon</h3>
@@ -19,175 +19,149 @@
     <nav class="sticky">
         <ul>
             <li>Zinzy</li>
-            <li><a href="#rolunk">Rólunk</a></li>
-            <li><a href="#arlista">Árlista</a></li>
-            <li><a href="#hirek">Zinzy hírek</a></li>
-            <li><a href="#kapcsolat">Kapcsolat</a></li>
+            <li><a href="#about">Rólunk</a></li>
+            <li><a href="#pricelists">Árlista</a></li>
+            <li><a href="#news">Zinzy hírek</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
         </ul>
     </nav>
-    <div class="sticky" id="gombok">
+
+    <div class="sticky" id="nameButtons">
         <div id="szilvi">
-            <button class="nevgombok" id="button" onclick="TelefonszamokMegjeleniteseSzilvi() ">Szilvi </button>
+            <button class="nameButton" id="button" onclick="TelefonszamokMegjeleniteseSzilvi() ">Szilvi </button>
         </div>
         <div id="edina">
-            <button class="nevgombok" id="button" onclick="TelefonszamokMegjeleniteseEdina() ">Edina</button>
+            <button class="nameButton" id="button" onclick="TelefonszamokMegjeleniteseEdina() ">Edina</button>
         </div>
         <div id="mariann">
-            <button class="nevgombok" id="button" onclick="TelefonszamokMegjeleniteseMariann()">Mariann</button>
+            <button class="nameButton" id="button" onclick="TelefonszamokMegjeleniteseMariann()">Mariann</button>
         </div>
     </div>
 
-    <div id=rolunk>
+    <div class="container" id="about">
         <h2>Rólunk</h2>
-        <div class="container">
-            <div class="hasab">
-
-                <img class="kep" src="img/pexels-andrea-piacquadio-733872.jpg" alt="">
-                <h3>Edina</h3>
-
-
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat."</p>
+        <div class="coloumn3part">
+            <img class="img" src="img/pexels-andrea-piacquadio-733872.jpg" alt="Kép Edináról">
+            <h3>Edina</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex ea commodo consequat."</p>
+        </div>
+        <div class="coloumn3part">
+            <div>
+                <img class="img" src="img/pexels-heitor-verdi-2169434.jpg" alt="Kép Mariannról">
+                <h3>Mariann</h3>
             </div>
-            <div class="hasab">
-                <div>
-                    <img class="kep" src="img/pexels-heitor-verdi-2169434.jpg" alt="">
-                    <h3>Mariann</h3>
-                </div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat."</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex ea commodo consequat."</p>
+        </div>
+        <div class="coloumn3part">
+            <div>
+                <img class="img" src="img/pexels-spencer-selover-428321.jpg" alt="Kép Szilviről">
+                <h3>Szilvi</h3>
             </div>
-            <div class="hasab">
-                <div>
-                    <img class="kep" src="img/pexels-spencer-selover-428321.jpg" alt="">
-                    <h3>Szilvi</h3>
-                </div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat."</p>
-            </div>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex ea commodo consequat."</p>
         </div>
     </div>
-    <div id=stripe>
-        <div id="idezet">
-            <img src="img/quotation-mark másolata.png" alt="" id="felso">
+
+    <div class="stripe">
+        <div>
+            <img src="img/quotation-mark másolata.png" alt="">
             <p>A körmeid minden elárulnak rólad, anélkül, hogy egy szót is szólnának.</p>
-            <img src="img/quotation-mark másolata (2).png" alt="" id="also">
+            <img src="img/quotation-mark másolata (2).png" alt="">
         </div>
     </div>
 
-    <div id="arlista">
+    <div class="container" id="priceLists">
         <h2>Árlista</h2>
-        <div class="container" id="arlistaContainer">
-
-            <div class="hasab" id="hasab1">
-                <img class="arlistakep" id="1" src="img/pexels-engin-akyurt-3065209.jpg" alt="">
-
-            </div>
-            <div class="hasab" id="hasab2">
-
-                <img class="arlistakep" id="2" src="img/pexels-photo-939836.jpeg" alt="" onclick="ManikurArlista()">
-
-            </div>
-            <div class="hasab" id="hasab3">
-                <img class="arlistakep" id="3" src="img/pexels-pixabay-36793.jpg" alt="" onclick="PedikurArlista()">
-            </div>
+        <div class="coloumn3part" id="col_1">
+            <img class="priceListImg" id="1" src="img/pexels-engin-akyurt-3065209.jpg" alt="">
+        </div>
+        <div class="coloumn3part" id="col_2">
+            <img class="priceListImg" id="2" src="img/pexels-photo-939836.jpeg" alt="" onclick="ManikurArlista()">
+        </div>
+        <div class="coloumn3part" id="col_3">
+            <img class="priceListImg" id="3" src="img/pexels-pixabay-36793.jpg" alt="" onclick="PedikurArlista()">
         </div>
     </div>
-    <div id="stripe">
-       
 
-    </div>
+    <div class="stripe"></div>
 
-    <div id="hirek">
+
+    <div class="container" id="news">
         <h2>Zinzy Hírek</h2>
-        <div class="hirekcontainer">
-            
-           
-                <div class="hirekhasab">
-                    <img src="img/IMG_1748.JPG" alt="">
-                    <img src="img/IMG_1749.JPG" alt="">
-                    <h4>2020.10.01.</h4>
+        <div class="coloumnMiddle">
+            <img src="img/IMG_1748.JPG" alt="">
+            <img src="img/IMG_1749.JPG" alt="">
+            <h4>2020.10.01.</h4>
 
-                    <p>"Kedves Vendégeink! Örömmel jelenthetjük, hogy októberben a bővítés és felújítás után
-                        megnyitottuk az
-                        üzlet a Fő utcára nyíló bejáratunkat. Ezentúl már 4 manikűr és 2 pedikűr állomáson várjuk új és
-                        régi
-                        vendégeinket. "</p>
-
-                </div>
-                <div class="hirekhasab">
-                    <img id="osziszinek" src="img/119025140_3349367181788584_4845249486211127137_n.jpg" alt="">
-                    <img id="osziszinek" src="img/osziszinek2.jpg" alt="">
-                    <h4>2020.09.08.</h4>
-                    <h4>Új őszi színek</h4>
-
-
-
-                </div>
-                <div class="hirekhasab">
-
-                    <h4>2020.09.01.</h4>
-                    <img src="img/pexels-evg-culture-3869390.jpg" alt="">
-                    <p>"Tájékoztatjuk kedves Vendégeinket, hogy a járványügyi helyzetnek megfelelően, szalonunk csak
-                        maszkot
-                        viselve látogatható. Ezen felül minden higiéniai és fertőtlenítési ajánlást betartva próbáljuk
-                        biztosítani, hogy a szépülés alatt Önök és Mi is biztonságban tudhassuk magunkat."</p>
-
-                </div>
-           
+            <p>"Kedves Vendégeink! Örömmel jelenthetjük, hogy októberben a bővítés és felújítás után
+                megnyitottuk az
+                üzlet a Fő utcára nyíló bejáratunkat. Ezentúl már 4 manikűr és 2 pedikűr állomáson várjuk új és
+                régi
+                vendégeinket. "</p>
         </div>
-
+        <div class="coloumnMiddle">
+            <img src="img/119025140_3349367181788584_4845249486211127137_n.jpg" alt="">
+            <img src="img/osziszinek2.jpg" alt="">
+            <h4>2020.09.08.</h4>
+            <h4>Új őszi színek</h4>
+        </div>
+        <div class="coloumnMiddle">
+            <h4>2020.09.01.</h4>
+            <img src="img/pexels-evg-culture-3869390.jpg" alt="">
+            <p>"Tájékoztatjuk kedves Vendégeinket, hogy a járványügyi helyzetnek megfelelően, szalonunk csak
+                maszkot
+                viselve látogatható. Ezen felül minden higiéniai és fertőtlenítési ajánlást betartva próbáljuk
+                biztosítani, hogy a szépülés alatt Önök és Mi is biztonságban tudhassuk magunkat."</p>
+        </div>
     </div>
-    <div id="kapcsolat">
+
+    <div class="stripe"></div>
+
+    <div class="container" id="contact">
         <h2>Kapcsolat</h2>
-        <div class="container">
-            <div class="kapcsolathasab">
-                <p>Zinzy Szépségszalon</p>
-                <p>2120 Dunakeszi</p>
-                <p>Fő út. 103.</p>
-                <br>
-                <p>Edina: 0670 123-45-67</p>
-                <p>Mariann: 0670 123-45-67</p>
-                <p>Szilvi: 0670 123-45-67</p>
-                <br>
-                <p>
-                    <img id="facebook" src="img/facebook.svg" alt="">
-                    <a href="https://www.facebook.com/zinzyszepsegszalon" target="_blank">Zinzy szépségszalon</a>
-                </p>
-                <p>
-                    <img id="facebook" src="img/facebook.svg" alt="">
-                    <a href="https://www.facebook.com/Mariann-Nails-104800782911923" target="_blank"> Mariann-Nails</a>
-                </p>
-
-            </div>
-            <div class="kapcsolathasab">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.9780520381873!2d19.12800621201878!3d47.637706599207014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d12fd19ef40b%3A0xa64b3413286bceb3!2zWklOWlkgU3rDqXBzw6lnc3phbG9uICYgTWFyaWFubiBOYWlscyAtIEZvZHLDoXN6YXQsIG3FsWvDtnLDtm0sIG1hbmlrxbFyLCBwZWRpa8Wxcg!5e0!3m2!1shu!2shu!4v1605010634871!5m2!1shu!2shu"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-
-            </div>
-
+        <div class="coloumn2part">
+            <p>Zinzy Szépségszalon</p>
+            <p>2120 Dunakeszi</p>
+            <p>Fő út. 103.</p>
+            <br>
+            <p>Edina: 0670 123-45-67</p>
+            <p>Mariann: 0670 123-45-67</p>
+            <p>Szilvi: 0670 123-45-67</p>
+            <br>
+            <p>
+                <img id="facebook" src="img/facebook.svg" alt="">
+                <a href="https://www.facebook.com/zinzyszepsegszalon" target="_blank">Zinzy szépségszalon</a>
+            </p>
+            <p>
+                <img id="facebook" src="img/facebook.svg" alt="">
+                <a href="https://www.facebook.com/Mariann-Nails-104800782911923" target="_blank"> Mariann-Nails</a>
+            </p>
         </div>
+        
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.9780520381873!2d19.12800621201878!3d47.637706599207014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d12fd19ef40b%3A0xa64b3413286bceb3!2zWklOWlkgU3rDqXBzw6lnc3phbG9uICYgTWFyaWFubiBOYWlscyAtIEZvZHLDoXN6YXQsIG3FsWvDtnLDtm0sIG1hbmlrxbFyLCBwZWRpa8Wxcg!5e0!3m2!1shu!2shu!4v1605010634871!5m2!1shu!2shu"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        
     </div>
+   
     <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
             href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
-    <script>
-
-    </script>
 
     <script type="text/javascript" src="js/Telefonszamok.js"></script>
     <script type="text/javascript" src="js/Arlistak.js"></script>
-    <script type="text/javascript" src="js/ArlistaKepAutomatikusanVissza.js"></script>
+    <script type="text/javascript" src="js/ArlistaimgAutomatikusanVissza.js"></script>
 </body>
 
 </html>
