@@ -1,31 +1,17 @@
 window.addEventListener('scroll', priceListContainerToDefault);
 
 function priceListContainerToDefault(){
-    pedicure();
+    imgReappear('col_3', '3');
 
-    manicure();
+    imgReappear('col_2', '2');
 
-    hair();
+    imgReappear('col_1', '1');
 
     var container = document.getElementById("priceLists");
     container.style.height="initial";
 
 }
 
-function pedicure(){
-    
-    imgReappear('col_3', '3')
-}
-
-function manicure(){
-
-    imgReappear('col_2', '2');
-}
-
-function hair(){
-
-    imgReappear('col_1', '1');
-}
 
 function imgReappear(col, kepId){
 

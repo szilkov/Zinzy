@@ -28,13 +28,13 @@
 
     <div id="nameButtons">
         <div id="szilvi">
-            <button class="nameButton" id="button" onclick="phoneNoSzilvi() ">Szilvi </button>
+            <button class="nameButton" id="button" onclick="phoneNo('szilvi', '0670-123-45-67')">Szilvi </button>
         </div>
         <div id="edina">
-            <button class="nameButton" id="button" onclick="phoneNoEdina() ">Edina</button>
+            <button class="nameButton" id="button" onclick="phoneNo('edina', '0670-123-45-67')">Edina</button>
         </div>
         <div id="mariann">
-            <button class="nameButton" id="button" onclick="phoneNoMariann()">Mariann</button>
+            <button class="nameButton" id="button" onclick="phoneNo('mariann', '0670-123-45-67')">Mariann</button>
         </div>
     </div>
 
@@ -84,13 +84,13 @@
     <div class="container" id="priceLists">
         <h2>Árlista</h2>
         <div class="coloumn3part" id="col_1">
-            <img class="priceListImg" id="1" src="img/pexels-engin-akyurt-3065209.jpg" alt="">
+            <img class="priceListImg" id="1" src="img/pexels-engin-akyurt-3065209.jpg" alt="" onclick='createPriceLists("hair")'>
         </div>
         <div class="coloumn3part" id="col_2">
-            <img class="priceListImg" id="2" src="img/pexels-photo-939836.jpeg" alt="" onclick="manicurePriceList()">
+            <img class="priceListImg" id="2" src="img/pexels-photo-939836.jpeg" alt="" onclick='createPriceLists("manicure")'>
         </div>
         <div class="coloumn3part" id="col_3">
-            <img class="priceListImg" id="3" src="img/pexels-pixabay-36793.jpg" alt="" onclick="pedicurePriceList()">
+            <img class="priceListImg" id="3" src="img/pexels-pixabay-36793.jpg" alt="" onclick='createPriceLists("pedicure")'>
         </div>
     </div>
 

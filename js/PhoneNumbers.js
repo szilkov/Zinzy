@@ -1,25 +1,11 @@
-function phoneNoSzilvi() {
-    deletePhoneNo();
-    var div = document.getElementById('szilvi');
-    var button = document.createElement("button");
-    div.appendChild(button);
-    button.innerHTML = "70/123-45-67";
-};
 
-function phoneNoEdina() {
-    deletePhoneNo();
-    var div = document.getElementById('edina');
-    var button = document.createElement("button");
-    div.appendChild(button);
-    button.innerHTML = "70/123-45-67";
-};
 
-function phoneNoMariann() {
+function phoneNo(name, phone) {
     deletePhoneNo();
-    var div = document.getElementById('mariann');
+    var div = document.getElementById(name);
     var button = document.createElement("button");
     div.appendChild(button);
-    button.innerHTML = "70/123-45-67";
+    button.innerHTML = phone;
 };
 
 function deletePhoneNo() {
