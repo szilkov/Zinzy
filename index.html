@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
-    <div class="header">
+<body >
+    <div class="header" id="header" onclick="minimizeHeader()">
         <div id="Zinzy">
-            <h1>Zinzy</h1>
-            <h3>Szépségszalon</h3>
+            <h1 id="h1">Zinzy</h1>
+            <h3 id="h3">Szépségszalon</h3>
         </div>
     </div>
 
-    <nav class="sticky">
+    <nav id="navbar">
         <ul>
             <li>Zinzy</li>
             <li><a href="#about">Rólunk</a></li>
@@ -26,15 +26,15 @@
         </ul>
     </nav>
 
-    <div class="sticky" id="nameButtons">
+    <div id="nameButtons">
         <div id="szilvi">
-            <button class="nameButton" id="button" onclick="TelefonszamokMegjeleniteseSzilvi() ">Szilvi </button>
+            <button class="nameButton" id="button" onclick="phoneNoSzilvi() ">Szilvi </button>
         </div>
         <div id="edina">
-            <button class="nameButton" id="button" onclick="TelefonszamokMegjeleniteseEdina() ">Edina</button>
+            <button class="nameButton" id="button" onclick="phoneNoEdina() ">Edina</button>
         </div>
         <div id="mariann">
-            <button class="nameButton" id="button" onclick="TelefonszamokMegjeleniteseMariann()">Mariann</button>
+            <button class="nameButton" id="button" onclick="phoneNoMariann()">Mariann</button>
         </div>
     </div>
 
@@ -87,14 +87,14 @@
             <img class="priceListImg" id="1" src="img/pexels-engin-akyurt-3065209.jpg" alt="">
         </div>
         <div class="coloumn3part" id="col_2">
-            <img class="priceListImg" id="2" src="img/pexels-photo-939836.jpeg" alt="" onclick="ManikurArlista()">
+            <img class="priceListImg" id="2" src="img/pexels-photo-939836.jpeg" alt="" onclick="manicurePriceList()">
         </div>
         <div class="coloumn3part" id="col_3">
-            <img class="priceListImg" id="3" src="img/pexels-pixabay-36793.jpg" alt="" onclick="PedikurArlista()">
+            <img class="priceListImg" id="3" src="img/pexels-pixabay-36793.jpg" alt="" onclick="pedicurePriceList()">
         </div>
     </div>
 
-    <div class="stripe"></div>
+    <div class="stripe" ></div>
 
 
     <div class="container" id="news">
@@ -159,9 +159,11 @@
     <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
             href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
 
-    <script type="text/javascript" src="js/Telefonszamok.js"></script>
-    <script type="text/javascript" src="js/Arlistak.js"></script>
-    <script type="text/javascript" src="js/ArlistaimgAutomatikusanVissza.js"></script>
+    <script type="text/javascript" src="js/PhoneNumbers.js"></script>
+    <script type="text/javascript" src="js/PriceLists.js"></script>
+    <script type="text/javascript" src="js/PriceListContainerToDefault.js"></script>
+    <script type="text/javascript" src="js/MinimizeHeader.js"></script>
+    <script type="text/javascript" src="js/Sticky.js"></script>
 </body>
 
 </html>

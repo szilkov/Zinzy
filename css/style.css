@@ -1,7 +1,13 @@
+html, body{
+    height: 100%;
+}
+
 body{
     margin: 0;
     background-color: rgba(250, 205, 224, .2);
+    
 }
+
 
 .header{
     background-image: url("../img/pexels-artem-beliaikin-433539.jpg");
@@ -9,7 +15,7 @@ body{
     background-size: cover;
     opacity: 80%;
     margin:0;
-    
+    height: 100%;
 
     
 }
@@ -17,12 +23,10 @@ body{
 h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 4rem;
-    margin: 0;
+    
     color:#801d48;
-    
-
-    
+    font-size: 8rem;
+    margin:0px;
 }
 
 h2{
@@ -35,14 +39,16 @@ h2{
 
 h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2rem;
+    /*font-size: 2rem;*/
+    font-size: 4rem;
     text-align: center;
     color:#801d48;
+    margin: 0px;
 }
 
 .header div:first-child{
-    padding: 2rem;
-    top: 100px; 
+   
+    padding-top:20%;
 }
 
 nav  ul{
@@ -97,14 +103,15 @@ body>div:nth-child(3){
 
 .sticky {
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
    
   }
 
-div.sticky{
+.stickyButtons{
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 60px;
   }
 
