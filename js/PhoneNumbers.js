@@ -1,4 +1,4 @@
-
+window.addEventListener('scroll', deletePhoneNo);
 
 function phoneNo(name, phone) {
     deletePhoneNo();
@@ -9,17 +9,16 @@ function phoneNo(name, phone) {
 };
 
 function deletePhoneNo() {
+
+    let phoneButtons = document.getElementsByClassName("nameButton");
+
+    for(let i =0; i<phoneButtons.length; i++){
+        let parent = phoneButtons[i];
+    if (parent.children.length === 2) {
+        parent.lastChild.remove()
+    }
+    }
+
    
-    var parent = document.getElementById("szilvi");
-    if (parent.children.length === 2) {
-        parent.lastChild.remove()
-    }
-    parent = document.getElementById("edina");
-    if (parent.children.length === 2) {
-        parent.lastChild.remove()
-    }
-    parent = document.getElementById("mariann");
-    if (parent.children.length === 2) {
-        parent.lastChild.remove()
-    }
+   
 };

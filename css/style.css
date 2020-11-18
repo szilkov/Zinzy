@@ -5,7 +5,6 @@ html, body{
 body{
     margin: 0;
     background-color: rgba(250, 205, 224, .2);
-    
 }
 
 
@@ -16,14 +15,11 @@ body{
     opacity: 80%;
     margin:0;
     height: 100%;
-
-    
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    
     color:#801d48;
     font-size: 8rem;
     margin:0px;
@@ -69,22 +65,21 @@ nav ul li{
     margin-left: 50px;
     color:#801d48;
     text-decoration: none;
-    
 }
+
 a{
     text-decoration: none;
     color:#801d48;
 }
 
 a:visited{
-
     color:#801d48;
 }
 
 button{
-    background-color:  #f7d5e6;
+    background-color: #801d48;
     border-radius: 4px;
-    color: #801d48;
+    color:  #f7d5e6;
     padding: 15px 10px;
     text-align: center;
     text-decoration: none;
@@ -93,21 +88,22 @@ button{
     border: 1px solid #801d48;
     width: 150px;
     margin-bottom: 5px;
-  
+}
+
+button:active{
+    border: none;
 }
 
 body>div:nth-child(3){
     float: left;
 }
 
-
 .sticky {
     position: -webkit-sticky;
     position: fixed;
     width: 100%;
     top: 0;
-   
-  }
+}
 
 .stickyButtons{
     position: -webkit-sticky;
@@ -126,8 +122,7 @@ body>div:nth-child(3){
 }
 
 .container div:last-of-type{
-    clear: right;
-   
+    clear: right; 
 }
 
 .coloumn3part{
@@ -139,7 +134,6 @@ body>div:nth-child(3){
 .img{
     width: 100%;
     border-radius: 50%;
-   
     box-shadow: 0 6px 100px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -152,23 +146,21 @@ body>div:nth-child(3){
     background-image: url('../img/pexels-artem-beliaikin-2624853.jpg');
     height: 250px;
     background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin-top:650px;
-   opacity: 80%;
-   z-index: -1;
-   position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:650px;
+    opacity: 80%;
+    z-index: -1;
+    position: relative;
 }
 
 body div:nth-child(7){
     margin-top: 450px;
-    
 }
 
 body div:nth-child(9){
-    margin-top: 0px;
-    
+    margin-top: 0px; 
 }
 
 .stripe p{
@@ -188,7 +180,6 @@ body div:nth-child(9){
 .stripe img:first-of-type{
     float:right;
     clear:left;
-    
 }
 
 .stripe img:last-of-type{
@@ -204,9 +195,7 @@ body div:nth-child(9){
 .priceListImg{
     width: 100%;
     box-shadow:  0 6px 100px 0 rgba(0, 0, 0, 0.19);
-   
 }
-
 
 .coloumn3part p{
 	 text-align:center;
@@ -235,13 +224,10 @@ body div:nth-child(9){
     margin: 10px;
 }
 
-
-
 .coloumn2part{
     width: 25%;
     float: left;
     margin-left: 0px;
-
 }
 
 .coloumn2part p{
@@ -254,17 +240,13 @@ iframe{
     margin-left: 4%;
 }
 
-
-
 div p img{
-    
     width: 20px;
 }
 
 .coloumn2part:nth-of-type(2) img{
    width: 40%;
 }
-
 
 body p{
     clear: left;

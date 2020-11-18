@@ -1,11 +1,12 @@
-/*window.onscroll = function () { minimizeHeader() };*/
+
 var header = document.getElementById("header");
 header.addEventListener('mousemove', minimize);
+header.addEventListener('click', minimize);
 
 var zinzy = document.getElementById('Zinzy');
 var height = 100;
 function minimize() {
-    var id = setInterval(min, 50);
+    var id = setInterval(min, 150);
     function min() {
       if (height <= 30) {
         clearInterval(id);
