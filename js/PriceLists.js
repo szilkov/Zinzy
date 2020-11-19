@@ -41,31 +41,28 @@ function createPriceLists(name) {
 function createPriceList(col, szoveg) {
 
     var container = document.getElementById('priceLists');
-    container.style.height = "300px";
+    container.style.height = "200px";
 
     switch (col) {
         case 'col_1':
-            var coloumnHair = document.getElementById('col_1');
-            var priceList = document.createElement("p");
-            coloumnHair.appendChild(priceList);
-            priceList.innerHTML = szoveg;
-            priceList.style.fontSize = "150%";
+            createPElementForPrices(col, szoveg);
             break;
         case 'col_2':
-            var coloumnManicure = document.getElementById('col_2');
-            var priceList = document.createElement("p");
-            coloumnManicure.appendChild(priceList);
-            priceList.innerHTML = szoveg;
-            priceList.style.fontSize = "150%";
+            createPElementForPrices(col, szoveg);
             break;
         case 'col_3':
-            var coloumnPedicure = document.getElementById('col_3');
-            var priceList = document.createElement("p");
-            coloumnPedicure.appendChild(priceList);
-            priceList.innerHTML = szoveg;
-            priceList.style.fontSize = "150%";
+            createPElementForPrices(col, szoveg);
             break;
     };
+
+}
+
+function createPElementForPrices(col, szoveg){
+    var coloumnPedicure = document.getElementById(col);
+    var priceList = document.createElement("p");
+    coloumnPedicure.appendChild(priceList);
+    priceList.innerHTML = szoveg;
+    priceList.style.fontSize = "110%";
 
 }
 
